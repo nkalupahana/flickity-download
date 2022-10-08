@@ -1,0 +1,27 @@
+/* Flickity download v1.0.1
+------------------------- */
+
+/* ---- flickity-download-button ---- */
+
+.flickity-download-button {
+  display: block;
+  right: 40px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* right-to-left */
+.flickity-rtl .flickity-download-button {
+  right: auto;
+  left: 40px;
+}
+
+.flickity-download-button .flickity-button-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 4px;
+}

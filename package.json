@@ -1,0 +1,28 @@
+{
+  "name": "flickity-download",
+  "version": "0.0.1",
+  "description": "Enable download of Flickity carousel images",
+  "main": "download.js",
+  "style": "download.css",
+  "dependencies": {
+    "flickity": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flickity",
+    "carousel",
+    "fullscreen"
+  ],
+  "author": "Nisala Kalupahana",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metafizzy/flickity-fullscreen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metafizzy/flickity-fullscreen/issues"
+  },
+  "homepage": "https://github.com/metafizzy/flickity-fullscreen#readme"
+}

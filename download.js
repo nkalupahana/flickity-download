@@ -56,11 +56,15 @@ proto._downloadImage = function() {
 
 // ----- FullscreenButton ----- //
 
-proto.downloadImage = function(dataurl) {
-  const link = document.createElement("a");
-  link.href = dataurl;
-  link.download = "image.webp";
-  link.click();
+proto.downloadImage = function(dataurl, flickity) {
+  if (flickity.nativeDownload) {
+    flickity.nativeDownload(dataurl);
+  } else {
+    const link = document.createElement("a");
+    link.href = dataurl;
+    link.download = "image.webp";
+    link.click();
+  }
 };
 
 function DownloadButton( flickity ) {
@@ -69,7 +73,7 @@ function DownloadButton( flickity ) {
   // events
   // trigger viewFullscreen or exitFullscreen on click
   this.onClick = function() {
-    flickity["downloadImage"](flickity.selectedElement.querySelector('img').src);
+    flickity["downloadImage"](flickity.selectedElement.querySelector('img').src, flickity);
   };
   this.clickHandler = this.onClick.bind( this );
 }
